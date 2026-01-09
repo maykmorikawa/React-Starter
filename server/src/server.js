@@ -9,9 +9,8 @@ const startServer = async () => {
         // Connect to MySQL
         await connectDB();
 
-        // Sync models with database (create tables if they don't exist)
-        // In production, use migrations instead of sync({ alter: true })
-        await sequelize.sync({ alter: true });
+        // Sync models with database
+        await sequelize.sync();
         console.log('✅ Database synced successfully');
 
         // Start Express server

@@ -10,15 +10,7 @@ const app = express();
 
 // Middleware
 app.use(cors({
-    origin: (origin, callback) => {
-        // Allow requests with no origin (like mobile apps or curl requests)
-        if (!origin) return callback(null, true);
-        // Allow any localhost (3000, 5173, etc.)
-        if (origin.startsWith('http://localhost') || origin.startsWith('http://127.0.0.1')) {
-            return callback(null, true);
-        }
-        callback(new Error('Not allowed by CORS'));
-    },
+    origin: true, // Allow all origins in development
     credentials: true
 }));
 
