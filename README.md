@@ -99,7 +99,7 @@ React-Starter/
 ├── server/                      # Backend (Node.js + Express)
 │   ├── src/
 │   │   ├── config/
-│   │   │   └── database.js     # Configuração MongoDB
+│   │   │   └── database.js     # Configuração MySQL
 │   │   ├── middleware/
 │   │   │   └── auth.js         # Middleware de autenticação JWT
 │   │   ├── models/
