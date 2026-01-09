@@ -1,11 +1,11 @@
 import React from 'react';
 import { BrowserRouter, Routes, Route, Navigate } from 'react-router-dom';
-import { AuthProvider } from './src/contexts/AuthContext';
-import ProtectedRoute from './src/components/ProtectedRoute';
-import Login from './src/pages/Login';
-import AdminDashboard from './src/pages/AdminDashboard';
-import ValidateCertificate from './src/pages/ValidateCertificate';
-import './src/index.css';
+import { AuthProvider } from './contexts/AuthContext';
+import ProtectedRoute from './components/ProtectedRoute';
+import Login from './pages/Login';
+import AdminDashboard from './pages/AdminDashboard';
+import ValidateCertificate from './pages/ValidateCertificate';
+import './index.css';
 
 const App: React.FC = () => {
   return (
