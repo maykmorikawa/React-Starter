@@ -20,17 +20,7 @@ CREATE TABLE `certificates` (
   `createdAt` datetime NOT NULL,
   `updatedAt` datetime NOT NULL,
   PRIMARY KEY (`id`),
-  UNIQUE KEY `certificateId` (`certificateId`),
-  UNIQUE KEY `certificateId_2` (`certificateId`),
-  UNIQUE KEY `certificateId_3` (`certificateId`),
-  UNIQUE KEY `certificateId_4` (`certificateId`),
-  UNIQUE KEY `certificateId_5` (`certificateId`),
-  UNIQUE KEY `certificateId_6` (`certificateId`),
-  UNIQUE KEY `certificateId_7` (`certificateId`),
-  UNIQUE KEY `certificateId_8` (`certificateId`),
-  UNIQUE KEY `certificateId_9` (`certificateId`),
-  UNIQUE KEY `certificateId_10` (`certificateId`),
-  UNIQUE KEY `certificateId_11` (`certificateId`)
+  UNIQUE KEY `certificateId` (`certificateId`)
 ) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 #
@@ -46,8 +36,5 @@ CREATE TABLE `users` (
   `createdAt` datetime NOT NULL,
   `updatedAt` datetime NOT NULL,
   PRIMARY KEY (`id`),
-  UNIQUE KEY `username` (`username`),
-  UNIQUE KEY `username_2` (`username`),
-  UNIQUE KEY `username_3` (`username`),
-  UNIQUE KEY `username_4` (`username`)
+  UNIQUE KEY `username` (`username`)
 ) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
